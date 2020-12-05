@@ -1,10 +1,12 @@
 #include <iostream>
 #include <string>
+#include "hash-library/sha256.h"
+#include "hash-library/sha256.cpp"
 
 using namespace std;
 
 int main()
 {
-    string msg = "Lets get moving then.";
-    cout << msg << endl;
+    SHA256 sha256;
+    std::cout << sha256("Hello World") << std::endl;
 }
